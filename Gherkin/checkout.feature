@@ -26,5 +26,5 @@ Contexto: Dado que estou na tela de cadastro do checkout
         | @dominio.com   |
 
     Cenário: Tentar cadastrar com campos obrigatórios vazios
-    Quando enviar o cadastro
+    Quando deixar de preencher algum campo obrigatório marcado com asterisco e enviar o cadastro
     Então deve ser exibida uma mensagem de alerta e o cadastro não deve ser concluído
