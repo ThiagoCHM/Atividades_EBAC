@@ -27,5 +27,15 @@ Contexto: Dado que estou na tela de configuração do produto
     Então deve ser exibida a mensagem de alerta "Quantidade Máxima de 10 Produtos por Venda"
 
     Cenário: Limpar configuração do produto para item com cor, tamanho e quantidade já selecionados
-    Quando selecionar ao menos uma das propriedades (Cor, Tamanho, Quantidade) e clicar no botão "Limpar"
-    Então a configuração deve voltar ao estado original
+    Quando selecionar Cor, Tamanho, Quantidade e clicar no botão "Limpar"
+    Então as configurações devem voltar ao estado original
+
+    Esquema do Cenário: Limpar configuração do produto
+    Quando selecionar <configuração> e clicar no botão "Limpar"
+    Então a <configuração> deve voltar ao estado original
+        
+        Exemplos:
+        | configuração |
+        | Cor          |
+        | Tamanho      |
+        | Quantidade   |
